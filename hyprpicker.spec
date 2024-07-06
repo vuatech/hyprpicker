@@ -6,6 +6,9 @@ License:        BSD-3-Clause AND HPND-sell-variant
 URL:            https://github.com/hyprwm/hyprpicker
 Source0:        https://github.com/hyprwm/hyprpicker/archive/v%{version}/%{name}-%{version}.tar.gz
 
+# Upstream, fix build with Clang (error: invalid argument '-std=c++23' not allowed with 'C')
+Patch0:        https://github.com/hyprwm/hyprpicker/commit/36d974181da499369fcf3cb78792a3553fbd37ea.patch
+
 BuildRequires:  cmake
 BuildRequires:  pkgconfig(cairo)
 BuildRequires:  pkgconfig(glesv2)
