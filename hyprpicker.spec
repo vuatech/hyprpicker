@@ -1,5 +1,5 @@
 Name:           hyprpicker
-Version:        0.3.0
+Version:        0.4.0
 Release:        1
 Summary:        A wlroots-compatible Wayland color picker
 Group:          Utility/Hyrpland
@@ -7,12 +7,12 @@ License:        BSD-3-Clause AND HPND-sell-variant
 URL:            https://github.com/hyprwm/hyprpicker
 Source0:        https://github.com/hyprwm/hyprpicker/archive/v%{version}/%{name}-%{version}.tar.gz
 
-# Upstream, fix build with Clang (error: invalid argument '-std=c++23' not allowed with 'C')
-Patch0:        https://github.com/hyprwm/hyprpicker/commit/36d974181da499369fcf3cb78792a3553fbd37ea.patch
 
 BuildRequires:  cmake
 BuildRequires:  pkgconfig(cairo)
 BuildRequires:  pkgconfig(glesv2)
+BuildRequires:  pkgconfig(hyprwayland-scanner)
+BuildRequires:  pkgconfig(hyprutils)
 BuildRequires:  pkgconfig(libjpeg)
 BuildRequires:  pkgconfig(pango)
 BuildRequires:  pkgconfig(pangocairo)
