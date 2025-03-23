@@ -1,8 +1,8 @@
 Name:           hyprpicker
 Version:        0.4.2
-Release:        3
+Release:        4
 Summary:        A wlroots-compatible Wayland color picker
-Group:          Utility/Hyrpland
+Group:          Utility/Hyprland
 License:        BSD-3-Clause AND HPND-sell-variant
 URL:            https://github.com/hyprwm/hyprpicker
 Source0:        https://github.com/hyprwm/hyprpicker/archive/v%{version}/%{name}-%{version}.tar.gz
